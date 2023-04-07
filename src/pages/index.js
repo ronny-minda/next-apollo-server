@@ -116,7 +116,7 @@ export default function Home() {
                         {
                           data?.allPerson.map((i) => {
                             return (
-                              <tr class="border-b dark:border-gray-700">
+                              <tr key={i.id} class="border-b dark:border-gray-700">
                                 <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white"> {i.id} </th>
                                 <td class="px-4 py-3">{i.nombre}</td>
                                 <td class="px-4 py-3">{i.telefono}</td>
