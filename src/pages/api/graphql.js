@@ -83,6 +83,8 @@ const resolvers = {
 const server = new ApolloServer({
   resolvers,
   typeDefs,
+  introspection: true,
+  playground: true
 });
 
 export default startServerAndCreateNextHandler(server);
