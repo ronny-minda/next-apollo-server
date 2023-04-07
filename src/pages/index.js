@@ -19,6 +19,8 @@ export default function Home() {
   console.log(data)
 
 
+
+
   return (
     <>
       <h1>Todas las personas</h1>

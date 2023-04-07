@@ -1,10 +1,11 @@
 import { ApolloClient, InMemoryCache, HttpLink, ApolloProvider } from '@apollo/client'
 import '@/styles/globals.css'
 
+
 const client = new ApolloClient({
   cache: new InMemoryCache,
   link: new HttpLink({
-    uri: 'http://localhost:3000/api/graphql'
+    uri: 'https://next-apollo-server.vercel.app/api/graphql'
   })  
 })
 
